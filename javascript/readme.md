@@ -1,0 +1,1 @@
+Este repositorio incluye mis soluciones a proyectos del trayecto *"JavaScript Algorithms and Data Structures"* de [**freeCodeCamp**](https://www.freecodecamp.org/).

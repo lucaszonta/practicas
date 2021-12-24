@@ -1,0 +1,517 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header,
+h1,
+a,
+img,
+nav,
+ul,
+li,
+section,
+article,
+h2,
+figure,
+figcaption,
+hr,
+p,
+div,
+span,
+hr,
+footer,
+label,
+input {
+  display: block;
+}
+
+body {
+  background-color: rgba(12, 12, 12, 1);
+  background-image: url(".../.../img/background.png");
+  background-size: cover;
+}
+
+img {
+  max-width: max-content;
+  max-height: max-content;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../font/Rubik-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../font/Lato-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* banner */
+
+.banner {
+  width: 100%;
+  height: 8.375rem;
+  overflow: hidden;
+  background: linear-gradient(
+      180deg,
+      #353535 0%,
+      rgba(0, 0, 0, 0) 17.19%,
+      rgba(6, 6, 6, 0) 88.02%,
+      rgba(54, 53, 53, 0.4) 100%
+    ),
+    #0c0c0c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 3;
+}
+
+.banner h1 {
+  height: 100%;
+  width: 80%;
+  float: left;
+}
+
+.logo {
+  height: 100%;
+  padding: 1.8rem 0 0 3rem;
+}
+.logo:hover{
+  transform: skew(-10deg)
+}
+
+.logo img {
+  height: 50%;
+}
+
+.logo2 {
+  width: 20%;
+  height: 100%;
+  float: right;
+}
+
+.logo2 img {
+  float: right;
+  height: 80%;
+  margin: 1rem;
+}
+
+/* nav */
+
+.nav-bar {
+  position: relative;
+  width: 100%;
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #d2ccc7 100%),
+    #b4b1ae; */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e9e3dc 100%),
+    #ded6cf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+.ul-bar {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  padding: 0.7rem;
+}
+
+.ul-bar li {
+  display: inline;
+  font-size: 1.2rem;
+  margin: 0 3%;
+}
+
+.a-bar {
+  text-decoration: none;
+  display: inline;
+}
+
+.a-bar:link {
+  color: #25211c;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.a-bar:visited {
+  color: #25211c;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.a-bar:hover {
+  color: white;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.a-bar:active {
+  color: #ddcb9d;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+/* cuerpo */
+
+.cuerpo {
+  position: relative;
+  z-index: 1;
+  /* background-color: #F9F5F1; */
+  background-color: #fff9f3;
+  opacity: 0.98;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 9px 0px 4px rgba(0, 0, 0, 0.35), -9px 0px 4px rgba(0, 0, 0, 0.35);
+}
+
+.nota {
+  padding: 0 5%;
+}
+
+.center {
+  text-align: center;
+}
+
+.fotos {
+  margin: auto;
+  width: 100%;
+}
+.deldia {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0.5rem solid #25211c;
+  border-radius: 0.5rem;
+}
+.deldia:hover{
+  transform: scale(1.01);
+}
+
+.caption {
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.813rem;
+  align-items: center;
+  text-align: center;
+  color: #25211c;
+}
+.subtitulo {
+  font-family: Rubik;
+  font-weight: 900;
+  font-size: 2.3rem;
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 2rem 0 1rem 0;
+  color: #25211c;
+}
+
+hr {
+  border: 0.5rem solid #ded6cf;
+  margin: 3rem 0;
+}
+
+h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 2.688rem;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+article > p {
+  text-align: justify;
+  padding: 1rem 0 0 0;
+  color: #25211c;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  align-items: center;
+}
+
+article > hr {
+  border: 0.15rem solid #ded6cf;
+  margin: 3rem 0;
+}
+
+footer > hr {
+  border: 0.5rem solid #ded6cf;
+}
+
+.notaimg:hover{
+  box-shadow: -10px 0px 8px rgba(222, 214, 207, 0.8), 10px 0px 8px rgba(222, 214, 207, 0.8);
+}
+
+.paginacion {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.paginacion a {
+  display: inline;
+  text-decoration: none;
+}
+.paginacion div {
+  display: inline;
+}
+.pag-none {
+  color: #25211c;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.pag:link {
+  color: #25211c;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.pag:visited {
+  color: #25211c;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.pag:hover {
+  color: white;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.pag:active {
+  color: #ddcb9d;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.hr-fin {
+  margin-bottom: 1rem;
+}
+
+.futer {
+  background-color: #ded6cf;
+  padding: 1rem 0;
+  text-align: justify;
+  color: #25211c;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.futer span {
+  text-align: center;
+}
+
+.hr-inicio {
+  margin: 1rem 0;
+}
+
+.bloque-eventos {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  padding: 1rem;
+  margin: 2%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0.3rem solid #25211c;
+  border-radius: 0.1rem;
+  align-content: center;
+}
+
+.eventos {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.bloque-eventos:hover {
+  transform: scale(1.1);
+}
+
+.nom-event {
+  text-align: center;
+  padding: 1rem 0 0 0;
+  color: #25211c;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+}
+
+.form{
+  text-align: center;
+  padding: 0 2rem;
+  color: #25211c;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+}
+
+.form form{
+  padding: 1rem 0 0 0;
+
+}
+
+form>label {
+  background-color: #ded6cf;
+  width: 60%;
+  margin: auto;
+  margin-bottom: .5rem;
+}
+
+form>input{
+  display: block;
+  text-align: center;
+  width: 59.6%;
+  margin: auto;
+  font-family: Lato;
+  font-weight: 500;
+  padding: .3rem 0;
+  border:.15rem solid #ded6cf;
+}
+
+form>textarea{
+  width: 59.6%;
+  text-align: center;
+  font-family: Lato;
+  font-weight: 500;
+  border:.15rem solid #ded6cf;
+}
+
+button {
+  margin: 1rem;
+  font-family: Rubik;
+  padding: .5rem;
+}
+
+br{
+font-size: 3rem;
+}
+
+.slideRight {
+  position: relative;
+  -moz-transition-property: background-color, color, left;
+  -moz-transition-duration: 5s;
+  -webkit-transition-property: background-color, color, left;
+  -webkit-transition-duration: 5s;
+  background-color: rgba(255, 0, 0, 0);
+  left: 0%;
+  width: 100px;
+  height: 50px;
+  color: black;
+}
+
+.slideLeft {
+  position: relative;
+  -moz-transition-property: background-color, color, left;
+  -moz-transition-duration: 5s;
+  -webkit-transition-property: background-color, color, left;
+  -webkit-transition-duration: 5s;
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0);
+  left: 90%;
+  color: white;
+  width: 100px;
+  height: 50px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#animate {
+  width: 100%;
+}
+
+.futer a{
+  text-decoration: none;
+}
+
+.contacto{
+  text-align: center;
+  color: #25211c;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contacto:link{
+  color: #25211c;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contacto:visited{
+  color: #574e44;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contacto:hover{
+  color: white;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contacto:active{
+  color: #ddcb9d;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
